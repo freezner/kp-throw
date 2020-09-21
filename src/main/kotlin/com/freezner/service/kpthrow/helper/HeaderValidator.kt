@@ -1,9 +1,9 @@
-package com.freezner.service.kpthrow.lib
+package com.freezner.service.kpthrow.helper
 
 import com.freezner.service.kpthrow.service.InMoneyService
-import org.springframework.stereotype.Service
+import org.springframework.stereotype.Component
 
-@Service
+@Component
 class HeaderValidator {
     fun valid(
         userId: Long,

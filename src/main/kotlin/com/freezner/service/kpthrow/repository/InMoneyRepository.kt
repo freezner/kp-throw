@@ -7,4 +7,6 @@ import org.springframework.stereotype.Repository
 @Repository
 interface InMoneyRepository : JpaRepository<InMoney, Long> {
     fun findByToken(token: String): InMoney
+
+    fun findTop1ByOrderBySeqDesc(): InMoney
 }

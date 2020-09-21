@@ -4,6 +4,7 @@ import java.time.LocalDateTime
 
 data class ResponseApi (
     var success: Boolean,
+    var errorCode: String,
     var message: String?,
     var data : List<Any?>? = null
 )

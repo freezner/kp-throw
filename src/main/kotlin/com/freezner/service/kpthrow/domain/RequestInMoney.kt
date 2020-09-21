@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull
 data class RequestInMoney (
     var userId: Long = 0L,
 
-    var roomId: String? = null,
+    var roomId: String = "",
 
     @NotNull(message = "뿌릴 금액이 없습니다.")
     @Min(value = 1, message = "뿌릴 금액이 올바르지 않습니다.")
