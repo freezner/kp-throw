@@ -8,4 +8,5 @@ class KpThrowApplication
 
 fun main(args: Array<String>) {
 	runApplication<KpThrowApplication>(*args)
+
 }
