@@ -1,7 +1,6 @@
 package com.freezner.service.kpthrow.service
 
 import com.freezner.service.kpthrow.domain.ResponseApi
-import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Service
 
 @Service

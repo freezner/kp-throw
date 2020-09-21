@@ -6,6 +6,7 @@ import com.freezner.service.kpthrow.service.InMoneyService
 import com.freezner.service.kpthrow.service.OutMoneyService
 import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.annotation.*
+import javax.validation.constraints.*
 
 @RestController
 @RequestMapping("/api/v1")
@@ -27,7 +28,7 @@ class ApiController (
     fun takeMoney(
         @RequestHeader(value = "X-USER-ID", required = true) userId: Long,
         @RequestHeader(value = "X-ROOM-ID", required = true) roomId: String,
-        @PathVariable(value = "token") token: String
+        @PathVariable(value = "token") @NotBlank token: String
     ): ResponseApi = outMoneyService.takeMoney(token, userId, roomId)
 
     // 조회
