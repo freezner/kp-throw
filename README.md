@@ -2,7 +2,7 @@
 
 ## 1. 사용 기술
 * Lang: Kotlin v1.3
-* JVM: Java8
+* JDK: Java8
 * Framework: Spring Boot v2.3.4
 * Database: MySQL -> H2 (In memory)
 * ORM: JPA + Hibernate (QueryDSL은 적용안함)
