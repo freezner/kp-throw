@@ -21,7 +21,7 @@ class OutMoneyService (
         const val INVALID_TOKEN             = "2002@존재하지 않는 토큰입니다."
         const val DONT_TAKE_MONEY_MYSELF    = "2003@자신이 뿌리기한 건은 자신이 받을 수 없습니다."
         const val SAME_ROOM_MEMBER_ONLY     = "2004@뿌린 자가 호출된 대화방과 동일한 대화방에 속한 사용자만이 받을 수 있습니다."
-        const val EXPIRED_TIME              = "2005@뿌린 머니의 조회는 ${EXPIRE_MINUTE}분간만 유효합니다."
+        const val EXPIRED_TIME              = "2005@받을 수 있는 시간(${EXPIRE_MINUTE}분)이 만료되었습니다."
         const val NOT_ENOUGH_MONEY          = "2006@받을 수 있는 머니가 모두 소진되었습니다."
         const val TAKE_OK                   = "받기 성공!!"
     }
